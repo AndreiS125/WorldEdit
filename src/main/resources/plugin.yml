@@ -1,0 +1,15 @@
+name: WorldEdit
+version: '${project.version}'
+main: org.andreis.mc.worldedit.WorldEdit
+api-version: 1.19
+authors: [ AndreiS ]
+description: World edit plugin.
+commands:
+  rg: {}
+  become: {}
+  invsee: {}
+  mute: {}
+  sayfor: {}
+  unmute: {}
+  /wand: {}
+
