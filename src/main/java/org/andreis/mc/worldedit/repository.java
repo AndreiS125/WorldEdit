@@ -1,6 +1,5 @@
 package org.andreis.mc.worldedit;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 
 import java.sql.Connection;
@@ -120,6 +119,22 @@ public class repository {
         catch(Exception e) {
             e.printStackTrace();
         }
+    }
+    public boolean getifowner(String name, String rgname) {
+        try {
+
+            ArrayList<String> rgs=getallmyrgs(name);
+            for(String rg:rgs){
+                if(rg.equals(rgname)){
+                    return true;
+                }
+            }
+
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+        return false;
     }
     public void update(String what, String namewho, String namerg) {
         try {
